@@ -1,4 +1,3 @@
-# A password complexity checking tool that also checks given password against common passwords
 import re
 import emoji
 from colorama import Fore, Style
@@ -34,7 +33,7 @@ elif complexity > 3:
 with open("combined-pass-list.txt","r", encoding="ISO 8859-1") as file:
     common_pass = file.read().split()
 
-print(f"\n-----Checking your password {Style.BRIGHT}{user_password}{Style.RESET_ALL} against common {Style.BRIGHT}{len(common_pass)}{Style.RESET_ALL} passwords-----\n")
+print(f"\n---Checking your password {Style.BRIGHT}{user_password}{Style.RESET_ALL} against common {Style.BRIGHT}{len(common_pass)}{Style.RESET_ALL} passwords---\n")
 
 if user_password in track(common_pass, description='[green]Please wait...'):
     print(f"\nFound in common passwords list, can be cracked in less than a min {emoji.emojize(':crying_face:')}; not secure!")
