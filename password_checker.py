@@ -11,6 +11,8 @@ user_password = input("\nEnter a desired password: ")
 #Defining scoring criteria
 if len(user_password) < 8:
     complexity -= 1
+if len(user_password) > 8:
+     complexity +=1
 if len(user_password) > 12:
     complexity += 1
 if len(user_password) > 18:
@@ -24,9 +26,9 @@ if re.search("[0-9]", user_password):
 
 #Using colors to indicate bad or good complexity score
 if complexity <= 3:
-    print(f"\nYour password complexity score is {Style.BRIGHT}{Fore.RED}{complexity}/7{Fore.RESET}{Style.RESET_ALL} {emoji.emojize(':thumbs_down:')}")
+    print(f"\nYour password complexity score is {Style.BRIGHT}{Fore.RED}{complexity}/8{Fore.RESET}{Style.RESET_ALL} {emoji.emojize(':thumbs_down:')}")
 elif complexity > 3:
-     print(f"\nYour password complexity score is {Style.BRIGHT}{Fore.GREEN}{complexity}/7{Fore.RESET}{Style.RESET_ALL} {emoji.emojize(':thumbs_up:')}")
+     print(f"\nYour password complexity score is {Style.BRIGHT}{Fore.GREEN}{complexity}/8{Fore.RESET}{Style.RESET_ALL} {emoji.emojize(':thumbs_up:')}")
 
 
 #Testing password security against known common passwords
