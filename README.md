@@ -2,7 +2,7 @@
 This script checks and scores a given password for comformity with standard and some extended password policies; runs it against a custom password list consisting of common, default and leaked passwords for possible matches.
 
 <p align="center">
-  <img src="https://github.com/sixth-sensei/password-complexity-checker/assets/31647166/d4e3854b-7640-42c5-8d04-4bec3d7e2879" width="350" title="Script screenshot">
+  <img src="https://github.com/sixth-sensei/password-complexity-checker/assets/31647166/d4e3854b-7640-42c5-8d04-4bec3d7e2879" width="auto" title="Script screenshot">
 </p>
 
 ## Dependencies
