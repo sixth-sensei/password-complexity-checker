@@ -6,7 +6,7 @@ This script checks and scores a given password for comformity with standard and 
 </p>
 
 ## Dependencies
-The following python modules are required for this script to run:
+The following python modules are required for this script to run properly:
 
 * Rich module: If not installed, run `pip install rich` or `python -m pip install rich`
 * Emoji module: if not installed, run `pip install emoji` or `python -m pip install emoji`
