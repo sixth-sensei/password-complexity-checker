@@ -6,7 +6,7 @@ This script checks and scores a given password for comformity with standard and 
 </p>
 
 ## How to use
-**Step 1:** Initialize Git LFS on your machine with `git lfs install` in order to get the raw pass-list file.
+**Step 1:** Initialize Git LFS on your machine with `git lfs install` in order to get the raw pass-list file when cloning.
 
 **Step 2:** Clone repository using `git lfs clone` or `git clone` although the former is deprecated but still works.
 
@@ -23,8 +23,3 @@ The following python modules are required for this script to run properly:
 * Rich module: If not installed, run `pip install rich` or `python -m pip install rich`
 * Emoji module: if not installed, run `pip install emoji` or `python -m pip install emoji`
 * Colorama module: If not installed, run `pip install colorama` or `python -m pip install colorama`
-
-
-**This tool is targeted at the following:**
-* System Admins: For user accounts audits
-* Cybersecurity enthusiasts: For online accounts security foolproof
