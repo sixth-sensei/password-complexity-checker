@@ -9,8 +9,6 @@ complexity = 0
 user_password = input("\nEnter a desired password: ")
 
 #Defining scoring criteria
-if len(user_password) < 8:
-    complexity -= 1
 if len(user_password) > 8:
      complexity +=1
 if len(user_password) > 12:
